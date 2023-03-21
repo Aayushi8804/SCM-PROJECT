@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+#include<stdlib.h>
+int main(void)
+{
+	int c,p;
+	int i;
+	int j;
+	int s[10]={};
+	printf("\n\n");
+	printf("    Welcome to Railways Seat Reservations System ");
+	printf("\n   ");
+	for (j=0; j<10; j++)
+	{
+	    printf("  \n");
+		printf("   Class\n\n   [1] 1st Tier\n   [2] 2nd Tier\n\n");
+		printf("  \n");
+		printf("   Choose: ");
+		scanf("%i",&c);
+		//system("cls");
+		switch(c)
+		{
+		case 1:
+		    printf("   \n");
+			printf("   1st Tier\n\n");
+			printf("   Seats available\n     |1|2|3|4|5|\n\n");
+			printf("   \n");
+			do
+			{
+                printf("   Pick a seat: ");
+                scanf("%i",&p);
+                s[j]=p;
+                //system("cls");
+			    for (i=0; i<j; i++)
+			    {
+                    if (s[j]==s[i])
+                    {
+                        printf("\n\n   Seat taken.\n\n");
+                        break;
+                    }
+			    }
+            
