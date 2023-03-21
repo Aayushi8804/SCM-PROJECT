@@ -40,4 +40,45 @@ int main(void)
                         break;
                     }
 			    }
+			                while (i!=j);
+                if(s[j] <= 5)
+                {
+                    printf("   \n");
+                    printf("\n");
+                    printf("   Class: 1st Tier\n");
+                    printf("   Seat no : %i\n",s[j]);
+                    printf("\n");
+                }
+                else
+                printf("\nWrong number!  No seat for you!\n\n");
+            break;
+		case 2:
+			printf("   \n");
+			printf("   2nd Tier\n\n");
+			printf("   Seats available\n    |6|7|8|9|10|\n\n");
+			printf("   \n");
+			do
+			{
+                printf("   Pick a seat: ");
+                scanf("%i",&p);
+                s[j]=p;
+                //system("cls");
+			    for (i=0; i<j; i++)
+			    {
+                    if (s[j]==s[i])
+                    {
+                        printf("\n\n   Seat taken.\n\n");
+                        break;
+                    }
+			    }
+            }
+            while (i!=j);
+                if(s[j] >= 6)
+                {
+                    printf("   \n");
+                    printf("\n");
+                    printf("   Class: 2nd Tier\n");
+                    printf("   Seat no : %i\n",s[j]);
+                    printf("\n");
+
             
