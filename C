@@ -80,5 +80,15 @@ int main(void)
                     printf("   Class: 2nd Tier\n");
                     printf("   Seat no : %i\n",s[j]);
                     printf("\n");
+		      }
+                else
+                printf("\nWrong number!  No seat for you!\n\n");
+            break;
+        default:
+                break;
+        }
+    }
+	return 0;
+}
 
             
